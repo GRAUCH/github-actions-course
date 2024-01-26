@@ -18,5 +18,5 @@ jobs:
       - name: Echo Variables
         run: |
           echo $GITHUB_ACTOR
-          echo secrets.GITHUB_TOKEN
+          echo ${{ secrets.GITHUB_TOKEN }}
           echo $GITHUB_REPOSITORY
