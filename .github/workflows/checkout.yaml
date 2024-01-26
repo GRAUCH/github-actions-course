@@ -15,3 +15,8 @@ jobs:
           git checkout main
       - name: List Files After
         run: ls -a
+      - name: Echo Variables
+        run: |
+          echo $GITHUB_ACTOR
+          echo secrets.GITHUB_TOKEN
+          echo $GITHUB_REPOSITORY
