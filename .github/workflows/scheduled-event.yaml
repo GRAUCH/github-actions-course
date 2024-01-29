@@ -5,7 +5,7 @@ on:
     - cron: "0/1 * * * *" # JUST FOR TESTING
 
 jobs:
-  stale:
+  echo-a-string:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "triggered"
+      - run: echo "Triggered"
