@@ -1,4 +1,4 @@
-name: Stale Issues & PRs
+name: Scheduled event
 on:
   schedule:
     - cron: "0 14 * * *"
