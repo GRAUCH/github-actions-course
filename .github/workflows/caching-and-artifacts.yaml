@@ -9,7 +9,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4  # Use v4 or the latest version that supports Node.js 20
         with:
-        node-version: '20'
+          node-version: '20'
       - name: Install dependencies
         run: npm install
       - name: Use Axios
