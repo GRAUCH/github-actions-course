@@ -18,6 +18,15 @@ jobs:
         run: echo '${{ toJSON(steps.cache-dependencies.outputs) }}'
       - name: Install dependencies
         run: npm install
+      - name: Run Tests
+        run: npm test
+      - name: Upload Code Coverage Report
+        uses: actions/upload-artifact@v3
+        if: always() #even if the test fails will upload our artifact
+        with:
+         name: code-coverage
+         path: coverage
+         retention-days: 10 #by default artifacts are keep for 90 days
       - name: Use Axios
         uses: actions/github-script@v6
         with:
