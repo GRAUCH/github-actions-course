@@ -1,4 +1,4 @@
-name: Simple Action
+name: Simple Action javascript
 on: [push]
 
 jobs:
